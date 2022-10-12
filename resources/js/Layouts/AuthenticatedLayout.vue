@@ -30,7 +30,6 @@ const showingNavigationDropdown = ref(false);
                                 <BreezeNavLink :href="route('dashboard')" :active="route().current('dashboard')">Dashboard</BreezeNavLink>
                                 <BreezeNavLink :href="route('posts.index')" :active="route().current('posts.index')">Posts</BreezeNavLink>
                             </div>
-
                         </div>
 
                         <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -50,6 +49,9 @@ const showingNavigationDropdown = ref(false);
                                     </template>
 
                                     <template #content>
+                                        <DropdownLink :href="route('logout')" method="post" as="button">
+                                            Profile
+                                        </DropdownLink>
                                         <DropdownLink :href="route('logout')" method="post" as="button">
                                             Log Out
                                         </DropdownLink>

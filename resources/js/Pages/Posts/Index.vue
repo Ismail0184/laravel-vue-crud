@@ -16,7 +16,7 @@ function destroy(id) {
     <BreezeAuthenticatedLayout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                First Laravel & Vue Crud
+                Posts
             </h2>
         </template>
         <div class="py-12">
@@ -25,7 +25,7 @@ function destroy(id) {
                     <div class="p-6 bg-white border-b border-gray-200">
                         <div className="flex items-center justify-between mb-6">
                             <Link className="px-6 py-2 text-white bg-green-500 rounded-md focus:outline-none"
-                                :href="route('posts.create')">Create Post</Link>
+                                :href="route('posts.index')">Create Post</Link>
                         </div>
 
                         <table className="table-fixed w-full">
@@ -34,7 +34,7 @@ function destroy(id) {
                                 <th className="px-4 py-2 w-20">No.</th>
                                 <th className="px-4 py-2">Title</th>
                                 <th className="px-4 py-2">Body</th>
-                                <th className="px-1 py-2">Action</th>
+                                <th className="px-4 py-2 w-200">Action</th>
                             </tr>
                             </thead>
                             <tbody>
