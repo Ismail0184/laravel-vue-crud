@@ -31,7 +31,7 @@ function destroy(id) {
                         <table className="table-fixed w-full">
                             <thead>
                             <tr className="bg-gray-100">
-                                <th className="px-4 py-2 w-20">No.</th>
+                                <th className="px-4 py-2 w-20">Sl No</th>
                                 <th className="px-4 py-2">Title</th>
                                 <th className="px-4 py-2">Body</th>
                                 <th className="px-4 py-2 w-200">Action</th>
